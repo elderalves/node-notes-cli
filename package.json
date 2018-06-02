@@ -1,6 +1,6 @@
 {
   "name": "notes-node",
-  "version": "1.0.0",
+  "version": "0.1.5",
   "description": "",
   "main": "app.js",
   "dependencies": {
@@ -19,6 +19,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elderalves/node-notes-cli.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "Michael Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elderalves/node-notes-cli/issues"
+  },
+  "homepage": "https://github.com/elderalves/node-notes-cli#readme"
 }
