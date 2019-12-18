@@ -27,6 +27,7 @@ const argDocs = yargs => {
 };
 
 console.log("testing the app");
+console.log("testing again");
 
 module.exports = {
   argDocs
