@@ -27,7 +27,6 @@ const argDocs = yargs => {
 };
 
 console.log("test");
-console.log("test");
 
 module.exports = {
   argDocs

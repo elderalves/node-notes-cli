@@ -44,5 +44,3 @@ switch (command) {
   default:
     console.log("Command not recognized");
 }
-
-console.log("test");
