@@ -3,7 +3,7 @@ const fs = require("fs");
 const logNote = note => {
   debugger;
   console.log("--");
-  console.log(`Title: ${note.title}`);
+  console.log(`Title: \x1b[35m${note.title}\x1b[0m`);
   console.log(`Body: ${note.body}`);
 };
 
