@@ -1,5 +1,12 @@
 
 
+## [2.2.1](https://github.com/elderalves/node-notes-cli/compare/v2.2.0...v2.2.1) (2025-02-21)
+
+
+### Bug Fixes
+
+* **notes:** update logNote function to improve console output formatting ([0dc83fd](https://github.com/elderalves/node-notes-cli/commit/0dc83fd61cbf07b09093fe8ae52074e9c8028b5c))
+
 # [2.2.0](https://github.com/elderalves/node-notes-cli/compare/v0.5.0...v2.2.0) (2025-02-21)
 
 
