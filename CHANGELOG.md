@@ -1,3 +1,14 @@
+
+
+# [2.2.0](https://github.com/elderalves/node-notes-cli/compare/v0.5.0...v2.2.0) (2025-02-21)
+
+
+### Features
+
+* **release:** configure Git for GitHub Actions and update package version to 2.1.0 ([624ba7c](https://github.com/elderalves/node-notes-cli/commit/624ba7ce70d432fefa9eb10c44071fc7f6a9e4e6))
+* **release:** migrate from semantic-release to release-it with configuration ([e734480](https://github.com/elderalves/node-notes-cli/commit/e734480ed830948d7d0a3b86c42c3e7211962f37))
+* **release:** update GitHub Actions workflow to specify npm registry URL and change NPM_TOKEN to NODE_AUTH_TOKEN ([db8991d](https://github.com/elderalves/node-notes-cli/commit/db8991dc82b50fd8a9c9e83943f54f15aa1372f0))
+
 # [0.5.0](https://github.com/elderalves/node-notes-cli/compare/v0.4.0...v0.5.0) (2025-02-21)
 
 
