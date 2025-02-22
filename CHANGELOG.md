@@ -1,5 +1,12 @@
 
 
+## [2.2.6-rc.3](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.2...v2.2.6-rc.3) (2025-02-22)
+
+
+### Bug Fixes
+
+* release actions ([faca199](https://github.com/elderalves/node-notes-cli/commit/faca1993c7b89dd17ef963633996b4151d6ba4fd))
+
 ## [2.2.6-rc.2](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.1...v2.2.6-rc.2) (2025-02-22)
 
 
