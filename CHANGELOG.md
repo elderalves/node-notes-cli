@@ -1,5 +1,7 @@
 
 
+## [2.2.6-rc.1](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.0...v2.2.6-rc.1) (2025-02-22)
+
 ## [2.2.6-rc.0](https://github.com/elderalves/node-notes-cli/compare/v2.2.5...v2.2.6-rc.0) (2025-02-22)
 
 ## [2.2.5](https://github.com/elderalves/node-notes-cli/compare/v2.2.4...v2.2.5) (2025-02-22)
