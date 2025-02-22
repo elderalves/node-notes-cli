@@ -1,6 +1,6 @@
 {
   "name": "notes-node",
-  "version": "2.2.6-rc.1",
+  "version": "2.2.6-rc.2",
   "description": "",
   "main": "app.js",
   "dependencies": {
