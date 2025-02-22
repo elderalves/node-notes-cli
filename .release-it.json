@@ -6,8 +6,6 @@
   },
   "github": {
     "release": false
-    // "releaseName": "v${version}",
-    // "releaseNotes": "${RELEASE_NOTES}"
   },
   "npm": {
     "publish": true,
