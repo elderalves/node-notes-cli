@@ -1,5 +1,14 @@
 
 
+## [2.2.6-rc.4](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.3...v2.2.6-rc.4) (2025-02-22)
+
+
+### Bug Fixes
+
+* release notes ([310a494](https://github.com/elderalves/node-notes-cli/commit/310a49473c693d24b604c8874dd2962afb31b220))
+* release notes ([9c22b2b](https://github.com/elderalves/node-notes-cli/commit/9c22b2b991f769d9688ec31618c105fdb4e351f3))
+* release-it json ([ec4b30c](https://github.com/elderalves/node-notes-cli/commit/ec4b30cacaec023e8189e0e1712b8cecc67fe16b))
+
 ## [2.2.6-rc.3](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.2...v2.2.6-rc.3) (2025-02-22)
 
 
