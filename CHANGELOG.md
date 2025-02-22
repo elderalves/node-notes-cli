@@ -1,5 +1,13 @@
 
 
+## [2.2.6-rc.5](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.4...v2.2.6-rc.5) (2025-02-22)
+
+
+### Bug Fixes
+
+* release workflow ([798148d](https://github.com/elderalves/node-notes-cli/commit/798148defe1cc5111b69cb4f2b42a378d1c01204))
+* text format on package.json ([292c272](https://github.com/elderalves/node-notes-cli/commit/292c27256079acdb62e248338108d98c7c1ab339))
+
 ## [2.2.6-rc.4](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.3...v2.2.6-rc.4) (2025-02-22)
 
 
