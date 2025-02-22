@@ -29,8 +29,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Get Release Notes
-        id: release_notes
+      - name: Draft Release
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -61,7 +60,3 @@ jobs:
           RELEASE_NOTES: ${{ steps.release_notes.outputs.body }}
         run: npm run release -- --ci
       
-      - name: Draft Release
-        uses: release-drafter/release-drafter@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
