@@ -1,21 +1,13 @@
-name: Release Drafter
-
+name: Draft Release
 on:
   push:
-    branches:
-      - main
-      - master
-  pull_request:
-    types: [opened, reopened, synchronize]
-
-permissions:
-  contents: read
-  pull-requests: write
-
+    tags:
+      - 'v*'
 jobs:
   update_release_draft:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
