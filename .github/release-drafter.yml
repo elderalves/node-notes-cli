@@ -1,0 +1,57 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+categories:
+  - title: "🚀 Features"
+    labels:
+      - "feat"
+      - "feature"
+    commit-labels:
+      - "feat"
+  - title: "🐛 Bug Fixes"
+    labels:
+      - "fix"
+      - "bugfix"
+    commit-labels:
+      - "fix"
+  - title: "📝 Documentation"
+    labels:
+      - "docs"
+    commit-labels:
+      - "docs"
+  - title: "🧰 Maintenance"
+    labels:
+      - "chore"
+      - "style"
+      - "refactor"
+      - "perf"
+    commit-labels:
+      - "chore"
+      - "style"
+      - "refactor"
+      - "perf"
+
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "minor"
+      - "feat"
+  patch:
+    labels:
+      - "patch"
+      - "fix"
+      - "docs"
+      - "style"
+      - "refactor"
+      - "perf"
+  default: patch
+
+template: |
+  ## Changes
+
+  $CHANGES
