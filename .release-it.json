@@ -5,7 +5,7 @@
     "push": true
   },
   "github": {
-    "release": false
+    "release": true
   },
   "npm": {
     "publish": true,
@@ -23,7 +23,11 @@
           { "type": "style", "release": "patch" },
           { "type": "refactor", "release": "patch" },
           { "type": "perf", "release": "patch" },
-          { "type": "test", "release": "patch" }
+          { "type": "test", "release": "patch" },
+          { "type": "chore", "release": "patch" },
+          { "type": "build", "release": "minor" },
+          { "type": "ci", "release": "patch" },
+          { "type": "revert", "release": "patch" }
         ]
       },
       "infile": "CHANGELOG.md"
