@@ -60,3 +60,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           RELEASE_NOTES: ${{ steps.release_notes.outputs.body }}
         run: npm run release -- --ci
+      
+      - name: Draft Release
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
