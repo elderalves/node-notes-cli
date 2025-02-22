@@ -17,17 +17,24 @@
         "name": "angular",
         "releaseRules": [
           { "type": "feat", "release": "minor" },
-          { "type": "fix", "release": "patch" },
-          { "type": "chore", "release": "patch" },
-          { "type": "docs", "release": "patch" },
-          { "type": "style", "release": "patch" },
-          { "type": "refactor", "release": "patch" },
-          { "type": "perf", "release": "patch" },
-          { "type": "test", "release": "patch" },
-          { "type": "chore", "release": "patch" },
-          { "type": "build", "release": "minor" },
-          { "type": "ci", "release": "patch" },
-          { "type": "revert", "release": "patch" }
+          { "type": "fix", "release": "patch", "section": "🐛 Bug Fixes" },
+          { "type": "chore", "release": "patch", "section": "Chores" },
+          { "type": "docs", "release": "patch", "section": "Documentation" },
+          { "type": "style", "release": "patch", "section": "Styles" },
+          { "type": "refactor", "release": "patch", "section": "Refactors" },
+          {
+            "type": "perf",
+            "release": "patch",
+            "section": "Performance Improvements"
+          },
+          { "type": "test", "release": "patch", "section": "Tests" },
+          { "type": "build", "release": "patch", "section": "Build System" },
+          {
+            "type": "ci",
+            "release": "patch",
+            "section": "Continuous Integration"
+          },
+          { "type": "revert", "release": "patch", "section": "Reverts" }
         ]
       },
       "infile": "CHANGELOG.md"
