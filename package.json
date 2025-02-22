@@ -24,7 +24,7 @@
   "scripts": {
     "test": "echo \"Error: opss no test specified\" && exit 1",
     "prepare": "husky install",
-    "release": "release-it"
+    "release": "release-it --preRelease=rc"
   },
   "repository": {
     "type": "git",
