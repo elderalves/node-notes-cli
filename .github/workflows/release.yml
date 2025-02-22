@@ -44,7 +44,7 @@ jobs:
             echo "release=true" >> $GITHUB_OUTPUT
           else
             echo "Last tag: $lastTag"
-            if git log "$lastTag"..HEAD --oneline | grep -E '^(feat|fix|docs|style|refactor|perf)' > /dev/null; then
+            if git log "$lastTag"..HEAD --pretty=format:"%s" | grep -E '^(feat|fix|docs|style|refactor|perf)' > /dev/null; then
               echo "Found commit eligible for release."
               echo "release=true" >> $GITHUB_OUTPUT
             else
