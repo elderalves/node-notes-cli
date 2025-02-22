@@ -1,5 +1,12 @@
 
 
+## [2.2.6-rc.6](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.5...v2.2.6-rc.6) (2025-02-22)
+
+
+### Bug Fixes
+
+* text on packge.json ([f5979f2](https://github.com/elderalves/node-notes-cli/commit/f5979f21a753d77fef6862108bf6d397b9aef71f))
+
 ## [2.2.6-rc.5](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.4...v2.2.6-rc.5) (2025-02-22)
 
 
