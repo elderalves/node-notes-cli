@@ -31,10 +31,6 @@
       },
       "infile": "CHANGELOG.md"
     },
-    "@lightness/release-it-slack-notification-plugin": {
-      "slackBotTokenRef": "${SLACK_BOT_TOKEN}",
-      "slackChannelRef": "test-notify",
-      "slackMessageTitle": "New release"
-    }
+    "./slack-notifier.js": {}
   }
 }
