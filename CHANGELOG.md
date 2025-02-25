@@ -1,5 +1,52 @@
 
 
+## [2.3.0-rc.0](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.9...v2.3.0-rc.0) (2025-02-25)
+
+
+### ✨ New Features
+
+* testing feat commit ([3c74a86](https://github.com/elderalves/node-notes-cli/commit/3c74a86bece1385e48e3905a90bbbbd9cf057356))
+
+
+### 🔧 Chores
+
+* testing chores commit ([71c22eb](https://github.com/elderalves/node-notes-cli/commit/71c22ebef8f1612d013bb6449f37523d01eadd71))
+
+
+### 💄 Styles
+
+* testing style commits ([424034e](https://github.com/elderalves/node-notes-cli/commit/424034e947348d27d2e158028c9ababa8ba39b21))
+
+
+### ♻️ Refactors
+
+* testing refractors commits ([d729f3a](https://github.com/elderalves/node-notes-cli/commit/d729f3a95cb54d7539b33c7ea6ef2c2a62222601))
+
+
+### ⚡ Performance Improvements
+
+* testing perf commits ([f311f48](https://github.com/elderalves/node-notes-cli/commit/f311f48954e9cd0b3bce0417f3316b70ff4f0d63))
+
+
+### 🧪 Tests
+
+* testing test commits ([7a02b40](https://github.com/elderalves/node-notes-cli/commit/7a02b4070fad30be591b353dbb3a6970d211e1d9))
+
+
+### 🏗️ Build System
+
+* testing build commits ([8e36ebf](https://github.com/elderalves/node-notes-cli/commit/8e36ebf0666e03a8c2fc230fe129df7a69680e0b))
+
+
+### ⚙️ Continuous Integration
+
+* testing ci commits ([01652e0](https://github.com/elderalves/node-notes-cli/commit/01652e06e146678a5d7edc65787a84f3bdcca8ff))
+
+
+### ⏮️ Reverts
+
+* testing reverts commits ([653ca93](https://github.com/elderalves/node-notes-cli/commit/653ca936cd8e43e067d79bb629d9784786d90975))
+
 ## [2.2.6-rc.9](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.8...v2.2.6-rc.9) (2025-02-25)
 
 
