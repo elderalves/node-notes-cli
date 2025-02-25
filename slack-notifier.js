@@ -22,10 +22,15 @@ module.exports = async function(context) {
   try {
     console.log(`Sending notification to #test-notify for ${name} v${version}`);
 
-    // Get the first section of the changelog (usually current release notes)
-    const truncatedChangelog = changelog
-      ? changelog.split("\n\n## ")[0].trim()
-      : "No changelog available";
+    // Clean up changelog by removing initial newlines and getting first section
+    const cleanChangelog = changelog ? changelog.trim() : "";
+    const sections = cleanChangelog.split("\n\n## ");
+    const latestSection =
+      sections.length > 1 ? "## " + sections[1] : sections[0];
+
+    // Ensure we have some content
+    const truncatedChangelog =
+      latestSection || "No changelog details available";
 
     // Ensure the changelog doesn't exceed Slack's limit
     const maxLength = 2900; // Leave some room for formatting
@@ -43,7 +48,8 @@ module.exports = async function(context) {
           type: "header",
           text: {
             type: "plain_text",
-            text: `:rocket: New Release: ${name} v${version}`
+            text: `:rocket: New Release: ${name} v${version}`,
+            emoji: true
           }
         },
         {
@@ -52,11 +58,20 @@ module.exports = async function(context) {
             type: "mrkdwn",
             text: finalChangelog
           }
+        },
+        {
+          type: "context",
+          elements: [
+            {
+              type: "mrkdwn",
+              text: `<https://github.com/elderalves/node-notes-cli/releases/tag/v${version}|View full release on GitHub>`
+            }
+          ]
         }
       ]
     });
 
-    console.log("Slack notification sent successfully:", result.ts);
+    console.log("✅ Slack notification sent successfully:", result.ts);
     return result;
   } catch (error) {
     console.error("Failed to send Slack notification:");
