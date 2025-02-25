@@ -4,12 +4,14 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "axios": "^1.7.9",
     "lodash": "^4.17.15",
     "yargs": "^15.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
+    "@lightness/release-it-slack-notification-plugin": "^1.1.4",
     "@release-it/conventional-changelog": "^8.0.2",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
@@ -22,7 +24,7 @@
     "release-it": "^17.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: ops no test specified\" && exit 1",
+    "test": "echo \"Error: opss no test specified\" && exit 1",
     "prepare": "husky install",
     "release": "release-it",
     "release:alpha": "release-it --preRelease=alpha",
