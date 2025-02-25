@@ -80,7 +80,9 @@ module.exports = async function(context) {
     const result = await slack.chat.postMessage({
       channel: "#test-notify",
       text: `:rocket: New Release: ${name} v${version}`, // Fallback text
-      blocks
+      blocks,
+      unfurl_links: false, // Disable link previews
+      unfurl_media: false // Disable media previews
     });
 
     console.log("✅ Slack notification sent successfully:", result.ts);
