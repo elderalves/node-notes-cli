@@ -34,7 +34,8 @@ module.exports = async function(context) {
     // 2. Convert GitHub markdown headings to Slack-friendly text
     relevantChangelog = relevantChangelog
       .replace(/^###?\s+(.*)$/gm, "*$1*")
-      .replace(/^\*\s+/gm, "• ");
+      .replace(/^\*\s+/gm, "• ")
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "<$2|$1>");
 
     // 3. Truncate if too large
     const maxLength = 2900;
