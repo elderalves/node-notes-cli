@@ -16,8 +16,8 @@
       "preset": {
         "name": "angular",
         "releaseRules": [
-          { "type": "feat", "release": "minor" },
-          { "type": "fix", "release": "patch", "section": "🐛 Bug Fixes" },
+          { "type": "feat", "release": "minor", "section": "FFFeatures" },
+          { "type": "fix", "release": "patch", "section": "🐛 BBBug Fixes" },
           { "type": "chore", "release": "patch", "section": "Chores" },
           { "type": "docs", "release": "patch", "section": "Documentation" },
           { "type": "style", "release": "patch", "section": "Styles" },
