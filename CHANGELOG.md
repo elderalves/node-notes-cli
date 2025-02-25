@@ -1,5 +1,12 @@
 
 
+## [2.6.0](https://github.com/elderalves/node-notes-cli/compare/v2.5.0...v2.6.0) (2025-02-25)
+
+
+### ✨ New Features
+
+* update ([2c14d2f](https://github.com/elderalves/node-notes-cli/commit/2c14d2fb2afc5c11526711dd5ef3d8bc3e4110b2))
+
 ## [2.5.0](https://github.com/elderalves/node-notes-cli/compare/v2.4.1...v2.5.0) (2025-02-25)
 
 
