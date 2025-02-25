@@ -31,6 +31,8 @@
       },
       "infile": "CHANGELOG.md"
     },
-    "./slack-notifier.js": {}
+    "slack-notifier": {
+      "path": "./slack-notifier.js"
+    }
   }
 }
