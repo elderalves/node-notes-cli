@@ -30,7 +30,7 @@
     "release:alpha": "release-it --preRelease=alpha",
     "release:beta": "release-it --preRelease=beta",
     "release:rc": "release-it --preRelease=rc",
-    "notify-release": "node ./slack-notifier.js"
+    "notify-release": "./notify-release.sh"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
