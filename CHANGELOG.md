@@ -1,5 +1,18 @@
 
 
+## [2.3.0-beta.0](https://github.com/elderalves/node-notes-cli/compare/v2.3.0-rc.0...v2.3.0-beta.0) (2025-02-25)
+
+
+### 🐛 Bug Fixes
+
+* package.json ops ([5e11e36](https://github.com/elderalves/node-notes-cli/commit/5e11e36af18e514ae18c55c7360374578699ce80))
+
+
+### 🔧 Chores
+
+* enforcing commit msg lint ([2c45b46](https://github.com/elderalves/node-notes-cli/commit/2c45b4677c8921f42756265ef5624a42290b09c5))
+* improve pre-releases ([9b182e7](https://github.com/elderalves/node-notes-cli/commit/9b182e7b0dd56ba0998106283d60ed6867d91038))
+
 ## [2.3.0-rc.0](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.9...v2.3.0-rc.0) (2025-02-25)
 
 
