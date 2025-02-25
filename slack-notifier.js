@@ -22,6 +22,19 @@ module.exports = async function(context) {
   try {
     console.log(`Sending notification to #test-notify for ${name} v${version}`);
 
+    // Get the first section of the changelog (usually current release notes)
+    const truncatedChangelog = changelog
+      ? changelog.split("\n\n## ")[0].trim()
+      : "No changelog available";
+
+    // Ensure the changelog doesn't exceed Slack's limit
+    const maxLength = 2900; // Leave some room for formatting
+    const finalChangelog =
+      truncatedChangelog.length > maxLength
+        ? truncatedChangelog.substring(0, maxLength) +
+          "...\n\n_Note: Changelog truncated. See full release notes on GitHub._"
+        : truncatedChangelog;
+
     const result = await slack.chat.postMessage({
       channel: "#test-notify",
       text: `:rocket: New Release: ${name} v${version}`,
@@ -37,7 +50,7 @@ module.exports = async function(context) {
           type: "section",
           text: {
             type: "mrkdwn",
-            text: changelog || "No changelog available"
+            text: finalChangelog
           }
         }
       ]
