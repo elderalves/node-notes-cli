@@ -1,5 +1,12 @@
 
 
+## [2.2.6-rc.7](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.6...v2.2.6-rc.7) (2025-02-25)
+
+
+### Bug Fixes
+
+* release config ([59554e2](https://github.com/elderalves/node-notes-cli/commit/59554e2cc0c7b302772161e2b068f5b40ba2bb4a))
+
 ## [2.2.6-rc.6](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.5...v2.2.6-rc.6) (2025-02-22)
 
 
