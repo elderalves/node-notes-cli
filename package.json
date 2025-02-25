@@ -26,7 +26,7 @@
   "scripts": {
     "test": "echo \"Error: opsss no test specified\" && exit 1",
     "prepare": "husky install",
-    "release": "release-it",
+    "release": "release-it --verbose",
     "release:alpha": "release-it --preRelease=alpha",
     "release:beta": "release-it --preRelease=beta",
     "release:rc": "release-it --preRelease=rc",
