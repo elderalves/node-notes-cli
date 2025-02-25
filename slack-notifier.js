@@ -2,17 +2,15 @@ const { WebClient } = require("@slack/web-api");
 
 module.exports = async function(context) {
   if (!process.env.SLACK_BOT_TOKEN) {
-    console.error("SLACK_BOT_TOKEN environment variable is required");
-    return;
+    throw new Error("SLACK_BOT_TOKEN environment variable is required");
   }
 
   const slack = new WebClient(process.env.SLACK_BOT_TOKEN);
   const { version, changelog, name } = context;
-  const channel = process.env.SLACK_CHANNEL || "test-notify";
 
   try {
-    await slack.chat.postMessage({
-      channel,
+    const result = await slack.chat.postMessage({
+      channel: "#test-notify",
       text: `:rocket: New Release: ${name} v${version}`,
       blocks: [
         {
@@ -31,7 +29,22 @@ module.exports = async function(context) {
         }
       ]
     });
+
+    return result;
   } catch (error) {
-    console.error("Failed to send Slack notification:", error.message);
+    // Log the full error object for debugging
+    console.error(
+      "Slack Error:",
+      JSON.stringify(
+        {
+          message: error.message,
+          code: error.code,
+          data: error.data
+        },
+        null,
+        2
+      )
+    );
+    throw error;
   }
 };
