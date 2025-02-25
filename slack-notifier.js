@@ -20,25 +20,29 @@ module.exports = async function(context) {
   try {
     console.log(`Sending notification to #test-notify for ${name} v${version}`);
 
-    // 1. Clean up changelog
+    // 1. Clean & extract only the relevant version section
     const cleanChangelog = (changelog || "").trim();
+    const versionRegex = new RegExp(
+      `(## \\[?${version}\\]?[^]*?)(?=## \\[|$)`,
+      "i"
+    );
+    const match = cleanChangelog.match(versionRegex);
+    let relevantChangelog = match
+      ? match[1].trim()
+      : "No details found for this version in the changelog.";
 
-    // 2. (Optional) You might want to parse out certain sections or headings.
-    //    For example, if you have "## [2.9.0] ..." or "### New Features",
-    //    you can do a simple replacement to make them bold or remove them:
-    const slackFriendlyChangelog = cleanChangelog
-      // Slack does not support # headings, so remove them or make them bold:
+    // 2. Convert GitHub markdown headings to Slack-friendly text
+    relevantChangelog = relevantChangelog
       .replace(/^###?\s+(.*)$/gm, "*$1*")
-      // Or bullet points if you want
       .replace(/^\*\s+/gm, "• ");
 
-    // 3. Truncate if too large (Slack has a 3001-char limit per text block).
-    const maxLength = 2900; // Leave some room for formatting
-    let finalChangelog =
-      slackFriendlyChangelog.length > maxLength
-        ? slackFriendlyChangelog.substring(0, maxLength) +
-          "...\n\n_Note: Changelog truncated. See full release notes on GitHub._"
-        : slackFriendlyChangelog;
+    // 3. Truncate if too large
+    const maxLength = 2900;
+    if (relevantChangelog.length > maxLength) {
+      relevantChangelog =
+        relevantChangelog.substring(0, maxLength) +
+        "...\n\n_Note: Changelog truncated. See full release notes on GitHub._";
+    }
 
     // 4. Build an array of blocks
     const blocks = [
@@ -50,7 +54,6 @@ module.exports = async function(context) {
           emoji: true
         }
       },
-      // Optional divider for visual separation
       {
         type: "divider"
       },
@@ -58,8 +61,7 @@ module.exports = async function(context) {
         type: "section",
         text: {
           type: "mrkdwn",
-          // You can label this however you want:
-          text: `*Changelog*\n\n${finalChangelog}`
+          text: `*Changelog*\n\n${relevantChangelog}`
         }
       },
       {
