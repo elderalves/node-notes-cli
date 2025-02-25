@@ -13,30 +13,20 @@
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": {
-        "name": "angular",
-        "releaseRules": [
-          { "type": "feat", "release": "minor", "section": "FFFeatures" },
-          { "type": "fix", "release": "patch", "section": "🐛 BBBug Fixes" },
-          { "type": "chore", "release": "patch", "section": "Chores" },
-          { "type": "docs", "release": "patch", "section": "Documentation" },
-          { "type": "style", "release": "patch", "section": "Styles" },
-          { "type": "refactor", "release": "patch", "section": "Refactors" },
-          {
-            "type": "perf",
-            "release": "patch",
-            "section": "Performance Improvements"
-          },
-          { "type": "test", "release": "patch", "section": "Tests" },
-          { "type": "build", "release": "patch", "section": "Build System" },
-          {
-            "type": "ci",
-            "release": "patch",
-            "section": "Continuous Integration"
-          },
-          { "type": "revert", "release": "patch", "section": "Reverts" }
-        ]
-      },
+      "preset": "angular",
+      "types": [
+        { "type": "feat", "section": "✨ New Features" },
+        { "type": "fix", "section": "🐛 Bug Fixes" },
+        { "type": "chore", "section": "🔧 Chores" },
+        { "type": "docs", "section": "📚 Documentation" },
+        { "type": "style", "section": "💄 Styles" },
+        { "type": "refactor", "section": "♻️ Refactors" },
+        { "type": "perf", "section": "⚡ Performance Improvements" },
+        { "type": "test", "section": "🧪 Tests" },
+        { "type": "build", "section": "🏗️ Build System" },
+        { "type": "ci", "section": "⚙️ Continuous Integration" },
+        { "type": "revert", "section": "⏮️ Reverts" }
+      ],
       "infile": "CHANGELOG.md"
     }
   }
