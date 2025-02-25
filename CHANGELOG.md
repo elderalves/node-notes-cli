@@ -1,5 +1,29 @@
 
 
+## [2.3.0](https://github.com/elderalves/node-notes-cli/compare/v2.3.0-rc.0...v2.3.0) (2025-02-25)
+
+
+### ✨ New Features
+
+* slack bot release ([48aed3f](https://github.com/elderalves/node-notes-cli/commit/48aed3f67041270126726566e6c25c3838537b35))
+* update ([9e29463](https://github.com/elderalves/node-notes-cli/commit/9e2946342f26060089cc45c41c1a4cdd08a60799))
+* update ([45e812b](https://github.com/elderalves/node-notes-cli/commit/45e812b81ae2fe22a0f743d20c0cca218ab1b66c))
+* update ([171b300](https://github.com/elderalves/node-notes-cli/commit/171b300b4374deee0378a9009d8db9ca635dd78f))
+* update ([357c109](https://github.com/elderalves/node-notes-cli/commit/357c109e0b2046d4ac988bd606a3c9d85bb00f86))
+* update ([d76d2a9](https://github.com/elderalves/node-notes-cli/commit/d76d2a952be9825c971ee85ef9757b0a58445ee2))
+
+
+### 🐛 Bug Fixes
+
+* package.json ops ([5e11e36](https://github.com/elderalves/node-notes-cli/commit/5e11e36af18e514ae18c55c7360374578699ce80))
+
+
+### 🔧 Chores
+
+* enforcing commit msg lint ([2c45b46](https://github.com/elderalves/node-notes-cli/commit/2c45b4677c8921f42756265ef5624a42290b09c5))
+* improve pre-releases ([9b182e7](https://github.com/elderalves/node-notes-cli/commit/9b182e7b0dd56ba0998106283d60ed6867d91038))
+* update package-lock ([3268979](https://github.com/elderalves/node-notes-cli/commit/3268979f09d00cbb6b6aca1972569b6f1a8212f2))
+
 ## [2.3.0-rc.0](https://github.com/elderalves/node-notes-cli/compare/v2.2.6-rc.9...v2.3.0-rc.0) (2025-02-25)
 
 
