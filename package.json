@@ -26,6 +26,12 @@
     "prepare": "husky install",
     "release": "release-it --preRelease=rc"
   },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elderalves/node-notes-cli.git"
