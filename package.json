@@ -24,7 +24,10 @@
   "scripts": {
     "test": "echo \"Error: ops no test specified\" && exit 1",
     "prepare": "husky install",
-    "release": "release-it --preRelease=rc"
+    "release": "release-it",
+    "release:alpha": "release-it --preRelease=alpha",
+    "release:beta": "release-it --preRelease=beta",
+    "release:rc": "release-it --preRelease=rc"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [

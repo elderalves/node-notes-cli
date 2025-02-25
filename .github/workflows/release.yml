@@ -4,6 +4,10 @@ on:
     branches:
       - main
       - master
+      - 'alpha/*'
+      - 'beta/*'
+      - 'rc/*'
+      - 'develop'
 
 jobs:
   release:
@@ -29,10 +33,26 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
+      - name: Determine release type
+        id: release_type
+        run: |
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          if [[ $BRANCH_NAME == alpha/* ]]; then
+            echo "type=alpha" >> $GITHUB_OUTPUT
+          elif [[ $BRANCH_NAME == beta/* ]]; then
+            echo "type=beta" >> $GITHUB_OUTPUT
+          elif [[ $BRANCH_NAME == rc/* ]]; then
+            echo "type=rc" >> $GITHUB_OUTPUT
+          elif [[ $BRANCH_NAME == "develop" ]]; then
+            echo "type=alpha" >> $GITHUB_OUTPUT
+          else
+            echo "type=release" >> $GITHUB_OUTPUT
+          fi
+
       - name: Check if release is necessary
         id: check_release
         run: |
-          lastTag=$(git describe --tags --abbrev=0 || echo "")
+          lastTag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           if [ -z "$lastTag" ]; then
             echo "No previous tag found. Proceeding with release."
             echo "release=true" >> $GITHUB_OUTPUT
@@ -52,5 +72,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run release -- --ci
-      
+        run: |
+          if [ "${{ steps.release_type.outputs.type }}" != "release" ]; then
+            npm run release -- --ci --preRelease=${{ steps.release_type.outputs.type }}
+          else
+            npm run release -- --ci
+          fi
