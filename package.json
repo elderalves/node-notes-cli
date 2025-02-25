@@ -22,7 +22,7 @@
     "release-it": "^17.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: ops no test specified\" && exit 1",
+    "test": "echo \"Error: opss no test specified\" && exit 1",
     "prepare": "husky install",
     "release": "release-it",
     "release:alpha": "release-it --preRelease=alpha",
