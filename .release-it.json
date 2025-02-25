@@ -30,9 +30,9 @@
         ]
       },
       "infile": "CHANGELOG.md"
-    },
-    "slack-notifier": {
-      "path": "./slack-notifier.js"
     }
+  },
+  "hooks": {
+    "after:release": "npm run notify-release"
   }
 }
