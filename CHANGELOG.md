@@ -1,5 +1,17 @@
 
 
+## [2.4.0](https://github.com/elderalves/node-notes-cli/compare/v2.3.0...v2.4.0) (2025-02-25)
+
+
+### ✨ New Features
+
+* update ([9c18c63](https://github.com/elderalves/node-notes-cli/commit/9c18c63e31ba14996b79474942a922b5608a54e4))
+
+
+### 🐛 Bug Fixes
+
+* improve slack notifier error handling and logging ([52f8209](https://github.com/elderalves/node-notes-cli/commit/52f82099ab7c8636162090c06f2bc395b6024b1e))
+
 ## [2.3.0](https://github.com/elderalves/node-notes-cli/compare/v2.3.0-rc.0...v2.3.0) (2025-02-25)
 
 
