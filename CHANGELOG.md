@@ -1,5 +1,12 @@
 
 
+## [2.9.0](https://github.com/elderalves/node-notes-cli/compare/v2.8.0...v2.9.0) (2025-02-25)
+
+
+### ✨ New Features
+
+* update ([fa5c948](https://github.com/elderalves/node-notes-cli/commit/fa5c948e51c5446f9fc75038e9b5dbcb7314e4e3))
+
 ## [2.8.0](https://github.com/elderalves/node-notes-cli/compare/v2.7.0...v2.8.0) (2025-02-25)
 
 
