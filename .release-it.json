@@ -33,6 +33,6 @@
     }
   },
   "hooks": {
-    "after:release": "npm run notify-release"
+    "after:release": ["npm run notify-release"]
   }
 }
